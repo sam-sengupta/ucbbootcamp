@@ -1,3 +1,4 @@
+/* Parent */
 body {
     background-color: #082B59;
     margin: 0;
@@ -23,6 +24,12 @@ a {
 a:hover {
     text-decoration: none;
 }
+
+
+
+
+
+/* Nav bar */
 header {
     border-bottom: 10px solid #d98555;
 }
@@ -37,10 +44,10 @@ nav ul {
 }
 nav li {
     font-size: 1.7rem;
-    padding: 1rem;
+    padding: 2rem;
 }
 
-nav .logo img {
+nav img {
     max-width: 200px;
 }
 nav a {
@@ -55,17 +62,7 @@ nav a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+/* Body */
 .main-bkgd {
     background: url("images/gulp-drinking-coffee.jpg") no-repeat;
     padding-bottom: 200px;
@@ -99,16 +96,7 @@ article {
 
 
 
-
-
-
-
-
-
-
-
-
-
+/* Footer */
 footer {
     color: #f2f2f2;
     text-align: center;
@@ -141,8 +129,7 @@ footer a {
 
 
 
-
-
+/* For medium screens */
 @media (min-width: 768px) {
     nav div {
         text-align: center;
@@ -158,6 +145,7 @@ footer a {
     }
 }
 
+/* For large screens */
 @media (min-width: 992px) {
     nav{
         display:flex;
@@ -176,7 +164,6 @@ footer a {
         display: flex;
         padding: 6rem 3rem 1rem 1rem;
     }
-
 
     .main {
         display: flex;
