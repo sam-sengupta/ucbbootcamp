@@ -3,22 +3,19 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
-    line-height: 2;
 }
 h1, h2, h3 {
+    color: #f2f2f2;
     font-family: 'Poppins', sans-serif;
-    /* padding-bottom: 2rem; */
+    text-shadow: 2px 4px 4px #D98555;
 }
 h1 {
     font-size: 3rem;
-    /* margin-bottom: 0; */
 }
-p {
-    font-size: 1.2rem;
-}
-/* make images flexible */
-img {
-    max-width: 100%;
+article p {
+    font-size: 1.6rem;
+    color: #59331d;
+    text-shadow: 2px 4px 4px #D98555;
 }
 a {
     color: #59331d;
@@ -29,28 +26,23 @@ a:hover {
 header {
     border-bottom: 10px solid #d98555;
 }
-/* navbar styling */
+nav div {
+    text-align: center;
+}
 nav ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
     text-align: center;
-    /* display: flex; */
 }
 nav li {
-    margin: 0 1rem 1rem 1rem;
     font-size: 1.7rem;
+    padding: 1rem;
 }
 
-nav li.item {
-    padding-bottom: 1rem;
-}
-/* max width on the image in pixels */
 nav .logo img {
     max-width: 200px;
-    /* padding: 1rem 35rem 0 2rem; */
 }
-/* flex basis on the image container, li */
 nav a {
     color: white;
     text-decoration: none;
@@ -58,9 +50,6 @@ nav a {
 nav a:hover {
     color: #d98555;
 }
-/* nav .item{
-    padding-top: 6rem;
-} */
 
 
 
@@ -76,43 +65,27 @@ nav a:hover {
 
 
 
-/* establishes a white background */
+
 .main-bkgd {
-    background: #000000 url("images/gulp-drinking-coffee.jpg") repeat-x bottom;
+    background: url("images/gulp-drinking-coffee.jpg") no-repeat;
     padding-bottom: 200px;
+    background-size: cover;
 }
-/* sits inside of the white background, centered */
 .main {
-    /* max-width: 1200px; */
     margin: 0 auto;
     padding: 2rem;
-    /* display: flex; */
-    /* flex-flow: row wrap; */
-    /* justify-content: space-between; */
 }
-/* p.main {
-    font-size: 50rem;
-} */
 article {
     flex-basis: 50%;
 }
-figure {
-    margin: 3rem 0 0 0;
-    padding: 0;
-    /* flex-basis: 45%; */
-}
-figure img {
-    border-radius: 10px;
-    margin: 0;
-    padding: 0;
-}
+
 .button {
     display: inline-block;
     font-size: 1.2rem;
     background-color: #59331D;
     border-radius: 10px;
     padding: 0.5rem 1rem;
-    margin: 0;
+    margin: 2rem 0 0 0;
     color: #f2f2f2;
     text-decoration: none;
     border: 3px solid #59331d;
@@ -143,9 +116,11 @@ footer {
     padding: 0 1rem;
     line-height: 2rem;
 }
+footer p {
+    font-size: 1.6rem;
+}
 footer p.disclaimer {
     font-size: 1rem;
-    /* padding: 0 2rem; */
 }
 footer ul {
     list-style-type: none;
@@ -168,56 +143,44 @@ footer a {
 
 
 
-@media (min-width: 992px) {
-    nav li {
-        display: inline-block;
-    }
-    nav .logo img {
-        padding: 1rem 35rem 0 2rem;
-    }
-    nav .item{
-        display: flex;
-        padding-top: 6rem;
-    }
-
-    .main-bkgd {
-        padding-bottom: 300px;
-    }
-    .main {
-        /* max-width: 1200px; */
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-    }
-    figure {
-        margin: 3rem 0 0 0;
-        flex-basis: 45%;
-    }
-}
-
 @media (min-width: 768px) {
-    /* nav ul {
-        display: flex;
-    } */
-    nav .logo img {
+    nav div {
         text-align: center;
     }
     nav .item {
         display: inline-block;
-        /* padding: 0 0 2% 20% */
-        /* text-align: center; */
     }
 
-    .main-bkgd {
-        padding-bottom: 300px;
-    }
     .main {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
     }
-    figure {
-        margin: 3rem 0 0 0;
-        flex-basis: 45%;
-    } 
+}
+
+@media (min-width: 992px) {
+    nav{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+    }
+    nav ul {
+        display:flex;
+        flex-direction:row;
+    }
+    nav .logo {
+        padding: 2rem;
+    }
+   
+    nav .item{
+        display: flex;
+        padding: 6rem 3rem 1rem 1rem;
+    }
+
+
+    .main {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
 }

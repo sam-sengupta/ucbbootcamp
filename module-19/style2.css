@@ -10,18 +10,19 @@ h1, h2, h3 {
 }
 h1 {
     font-size: 2.5rem;
+    margin: 0;
+    padding: 2rem;
+}
+
+h2 {
+    font-size: 1.2rem;
 }
 p {
     font-size: 1.2rem;
 }
 img {
     max-width: 100%;
-}
-a {
-    color: #59331d;
-}
-a:hover {
-    text-decoration: none;
+    border-radius: 10px;
 }
 header {
     border-bottom: 10px solid #d98555;
@@ -40,8 +41,12 @@ nav li {
     padding: 1rem;
 }
 
+
+
 nav .logo img {
     max-width: 200px;
+    padding: 0;
+    margin: 0;
 }
 nav a {
     color: white;
@@ -71,36 +76,8 @@ nav a:hover {
 }
 .main {
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0 2rem 2rem 2rem;
 }
-article {
-    flex-basis: 50%;
-}
-figure {
-    margin: 3rem 0 0 0;
-    padding: 0;
-}
-figure img {
-    border-radius: 10px;
-    margin: 0;
-    padding: 0;
-}
-.button {
-    display: inline-block;
-    font-size: 1.2rem;
-    background-color: #59331D;
-    border-radius: 10px;
-    padding: 0.5rem 1rem;
-    margin: 0;
-    color: #f2f2f2;
-    text-decoration: none;
-    border: 3px solid #59331d;
-}
-.button:hover {
-    background-color: #f2f2f2;
-    color: #59331d;
-}
-
 
 
 
@@ -120,11 +97,9 @@ footer {
     text-align: center;
     border-top: 10px solid #d98555;
     padding: 0 1rem;
-    line-height: 2rem;
 }
 footer p.disclaimer {
     font-size: 1rem;
-    /* padding: 0 2rem; */
 }
 footer ul {
     list-style-type: none;
@@ -147,7 +122,6 @@ footer a {
 
 
 
-
 @media (min-width: 768px) {
     nav div {
         text-align: center;
@@ -157,19 +131,18 @@ footer a {
     }
 
 
-    .main-bkgd {
-        padding-bottom: 300px;
+
+    h2 {
+        margin: 0;
     }
     .main {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 0.5rem 1rem;
     }
-    figure {
-        margin: 3rem 0 0 0;
-        flex-basis: 45%;
-    } 
 }
+
 
 @media (min-width: 992px) {
     nav{
@@ -188,22 +161,47 @@ footer a {
     nav .item{
         display: flex;
         padding: 6rem 3rem 1rem 1rem;
-    } 
+    }  
 
-    .main-bkgd {
-        padding-bottom: 300px;
-    }
-    article {
-        padding-top: 5rem;
+
+
+    h2 {
+        margin: 0;
+        font-size: 1.8rem;
     }
     .main {
-        /* max-width: 1200px; */
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem 2rem;
     }
-    figure {
-        margin: 3rem 0 0 0;
-        flex-basis: 45%;
+
+    .ai {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .aa {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .bi {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .ba {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .ci {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .ca {
+        grid-column: 3/4;
+        grid-row: 2/3;
     }
 }
