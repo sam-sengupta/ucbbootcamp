@@ -1,3 +1,4 @@
+/* Body + general HTML */
 body {
     font-family: 'Lato', sans-serif;
     line-height: 2;
@@ -7,6 +8,7 @@ h1, h3 {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Navigation Bar Styling */
 .bg-primary {
     background-color: #082B59 !important;
 }
@@ -19,16 +21,17 @@ h1, h3 {
     color: #D98555 !important;
 }
 
+.text-light {
+    color: #F2F2F2 !important;
+}
+
+/* Body Styling */
 .card {
     background-color: #59331d !important;
 }
 
 .border-secondary {
     border-color: #D98555 !important;
-}
-
-.text-light {
-    color: #F2F2F2 !important;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
