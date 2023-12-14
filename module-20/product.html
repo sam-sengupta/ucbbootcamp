@@ -1,114 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gulp Coffee Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet">
-</head>
-<body>
-    <header class="bg-primary border-bottom border-secondary border-5 mb-5">
-        <nav class="navbar navbar-expand-md" data-bs-theme="dark">
-            <div class="container-xl">
-                <a class="navbar-brand" href="https://uxuicurriculum.wixsite.com/gulproast">
-                    <img src="https://assets.codepen.io/6306176/gulp-logo-light.png" alt="Gulp Roast Coffee. Click for home." width="150"/>
-                </a>
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- <button class="navbar-toggler" id="menuButton" onclick="myFunction()" aria-expanded="false">
-                    <span class="navbar-toggler-icon"></span>
-                </button> -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item p-3">
-                        <a href="https://sam-sengupta.github.io/ucbbootcamp/module-19/index.html" class="nav-link fs-4 text-light">About</a>
-                    </li>
-                    <li class="nav-item p-3">
-                        <a href="https://uxuicurriculum.wixsite.com/gulproast" class="nav-link fs-4 text-light">Locations</a>
-                    </li>
-                    <li class="nav-item p-3">
-                        <a href="https://uxuicurriculum.wixsite.com/gulproast" class="nav-link fs-4 text-light">FAQ</a>
-                    </li>
-                    <li class="nav-item p-3 bg-light">
-                        <a href="index.html" class="nav-link fs-4 text-light">Coffee</a>
-                    </li>
-                    <li class="nav-item p-3">
-                        <a href="https://sam-sengupta.github.io/ucbbootcamp/module-19/contact.html" class="nav-link fs-4 text-light">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            </div>
-        </nav>
-    </header>
-      
-    <div class="container p-5">
-        <div class="row">
-            <div class="col-sm">
-                <img src="https://assets.codepen.io/6306176/gulp-triple-blended.jpg" alt="Our Triple-Blended Coffee Beans." class="img-fluid rounded">
-            </div>
-            <div class="col-sm">
-                <p class="fs-5">Skillfully roasted and carefully blended, our Triple-Blended Coffee Beans don’t just wake you up in the morning, they pack a lasting punch that's sure to leave you wanting more. With silky smoothness and layered flavors, there’s really no better way to start your day.</p>
-                <!-- align-items-start -->
-                <div class="d-flex pt-3">
-                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" >
-                        <button class="nav-link active text-start" data-bs-toggle="pill" data-bs-target="#flavorprofile" type="button" role="tab">Flavor Profile</button>
-                        <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#recommend" type="button" role="tab">Recommended Brew Method</button>
-                        <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#size" type="button" role="tab">Size</button>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@700&display=swap" rel="stylesheet">
+        <title>Products Page</title>
+    </head>
+    <body>
+
+        <header class="bg-primary border-bottom border-secondary border-5 mb-5">
+            <nav class="navbar navbar-expand-md" data-bs-theme="dark">
+                <div class="container-xl">
+                    <a class="navbar-brand" href="https://uxuicurriculum.wixsite.com/gulproast">
+                        <img src="https://assets.codepen.io/6306176/gulp-logo-light.png" alt="Gulp Roast Coffee. Click for home." width="150"/>
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item p-3">
+                                <a href="https://sam-sengupta.github.io/ucbbootcamp/module-19/index.html" class="nav-link fs-4 fw-bold text-light">About</a>
+                            </li>
+                            <li class="nav-item p-3">
+                                <a href="https://uxuicurriculum.wixsite.com/gulproast" class="nav-link fs-4 fw-bold text-light">Locations</a>
+                            </li>
+                            <li class="nav-item p-3">
+                                <a href="https://uxuicurriculum.wixsite.com/gulproast" class="nav-link fs-4 fw-bold text-light">FAQ</a>
+                            </li>
+                            <li class="nav-item p-3 bg-light">
+                                <a href="index.html" class="nav-link fs-4 fw-bold text-light">Coffee</a>
+                            </li>
+                            <li class="nav-item p-3">
+                                <a href="https://sam-sengupta.github.io/ucbbootcamp/module-19/contact.html" class="nav-link fs-4 fw-bold text-light">Contact</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="tab-content" id="v-pills-tabContent">
-                        <div class="tab-pane fade show active" id="flavorprofile" role="tabpanel">
-                            <h2>Flavor Profile</h2>
-                            <p>Dark chocolate / caramel / papaya</p>
+                </div>
+            </nav>
+        </header>
+        
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-sm">
+                    <img src="https://assets.codepen.io/6306176/gulp-triple-blended.jpg" alt="Our Triple-Blended Coffee Beans." class="img-fluid rounded">
+                </div>
+                <div class="col-sm">
+                    <p class="fs-5">Skillfully roasted and carefully blended, our Triple-Blended Coffee Beans don’t just wake you up in the morning, they pack a lasting punch that's sure to leave you wanting more. With silky smoothness and layered flavors, there’s really no better way to start your day.</p>
+                    <div class="d-flex pt-3">
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" >
+                            <button class="nav-link active fw-bold text-start" data-bs-toggle="pill" data-bs-target="#flavorprofile" type="button" role="tab">Flavor Profile</button>
+                            <button class="nav-link fw-bold text-start" data-bs-toggle="pill" data-bs-target="#recommend" type="button" role="tab">Recommended Brew Method</button>
+                            <button class="nav-link fw-bold text-start" data-bs-toggle="pill" data-bs-target="#size" type="button" role="tab">Size</button>
                         </div>
-                        <div class="tab-pane fade" id="recommend" role="tabpanel">
-                            <h2>Recommended Brew Method</h2>
-                            <p>French press</p>
-                        </div>
-                        <div class="tab-pane fade" id="size" role="tabpanel">
-                            <h2>Size</h2>
-                            <p>12 oz.: $18</p>
-                            <p>5 lb.: $85</p>
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="flavorprofile" role="tabpanel">
+                                <h3>Flavor Profile</h3>
+                                <p>Dark chocolate / caramel / papaya</p>
+                            </div>
+                            <div class="tab-pane fade" id="recommend" role="tabpanel">
+                                <h3>Recommended Brew Method</h3>
+                                <p>French press</p>
+                            </div>
+                            <div class="tab-pane fade" id="size" role="tabpanel">
+                                <h3>Size</h3>
+                                <p>12 oz.: $18</p>
+                                <p>5 lb.: $85</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- <div class="d-flex align-items-start p-5">
-        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#flavorprofile" type="button" role="tab">Flavor Profile</button>
-            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#recommend" type="button" role="tab">Recommended Brew Method</button>
-            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#size" type="button" role="tab">Size</button>
-        </div>
-        <div class="tab-content" id="v-pills-tabContent">
-            <div class="tab-pane fade show active" id="flavorprofile" role="tabpanel">
-                <h2>Flavor Profile</h2>
-                <p>Dark chocolate / caramel / papaya</p>
+        <footer class="border-secondary border-top border-5 text-center py-5 mt-5 bg-primary text-white">
+            <div class="container-sm">
+            <p>&copy;2022 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.</p>
+            <p><small>This site is operated by Trilogy Education Services for educational purposes only. This is not a coffee products website. This is a fictitious company and scenario intended only for internal academic purposes.</small></p>
             </div>
-            <div class="tab-pane fade" id="recommend" role="tabpanel">
-                <h2>Recommended Brew Method</h2>
-                <p>French press</p>
-            </div>
-            <div class="tab-pane fade" id="size" role="tabpanel">
-                <h2>Size</h2>
-                <p>12 oz.: $18</p>
-                <p>5 lb.: $85</p>
-            </div>
-        </div>
-    </div> -->
+        </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-
-    <footer class="border-secondary border-top border-5 text-center py-5 mt-5 bg-primary text-white">
-        <div class="container-sm">
-          <p>&copy;2022 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.</p>
-          <p><small>This site is operated by Trilogy Education Services for educational purposes only. This is not a coffee products website. This is a fictitious company and scenario intended only for internal academic purposes.</small></p>
-        </div>
-    </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-</body>
+    </body>
 </html>
